@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Online Registration System</title>
+    <!-- adding Tailwind CSS  -->
+    <link href="./output.css" rel="stylesheet">
+    <!-- Adding JS -->
+    <script src="index.js" defer></script>
+    <!-- Adding Font-Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="border-4 border-blue-400  text-black text-center justify-center p-3">
+        <h1 class="font-bold font-serif text-3xl">STUDENT MANAGEMENT SYSTEM</h1>
+        <p>An online platform that manages student details</p>
+    </header>
+
+    <section class="m-3 ">
+        <h1 class="text-center p-2 font-bold">Student Details</h1>
+        <form action="" class="flex flex-col items-center">
+            <input type="text" placeholder="Enter your name" class="w-70 border-2 border-black px-2 my-1" id="name">
+            <input type="number" placeholder="Enter your Student ID" class="w-70 border-2 border-black px-2 my-1 "
+                id="studentId">
+            <input type="email" placeholder="Enter your Email" class="w-70 border-2 border-black px-2 my-1 " id="email">
+            <input type="number" placeholder="Enter your Contact Number" class="w-70 border-2 border-black px-2 my-1 "
+                id="contact">
+        </form>
+        <div class="flex justify-center">
+            <button class="border-1 border-b-blue-400 bg-indigo-400 rounded-3xl my-5 px-2 text-xl hover:bg-blue-500 " id="submit"> Submit
+            </button>
+        </div>
+
+    </section>
+
+    <section class=" border-2 border-b-indigo-300 w-full my-25" id="Record">
+
+        <h1 class="text-center p-2 font-bold"> Registered Students Record</h1>
+
+        <table class="w-full text-center border-2 border-b-indigo-300" id="table">
+            <thead class="border-2 border-b-indigo-300 bg-indigo-200">
+                <tr>
+                    <th class="border-2 border-b-indigo-300 p-2">Name</th>
+                    <th class="border-2 border-b-indigo-300 p-2">Student ID</th>
+                    <th class="border-2 border-b-indigo-300 p-2">Email</th>
+                    <th class="border-2 border-b-indigo-300 p-2">Contact Number</th>
+                    <th class="border-2 border-b-indigo-300 p-2">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Records will be dynamically inserted here using JavaScript-->
+            </tbody>
+
+    </section>
+
+</body>
+
+</html>
