@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: lightblue;
+}
+.item{
+    border: 2px solid lightblue;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightskyblue;
+}
+
+.trash-button:hover{
+    background-color: lightblue;
+    color: white;
+}
+.trash-button{
+    font-size: x-large;
+}
